@@ -1,0 +1,56 @@
+.six-news {
+  display: none;
+
+  .six-news__container {
+    display: flex;
+    flex-direction: column;
+
+    .six-news__card {
+      display: flex;
+      padding: 1rem 0;
+
+      &:hover {
+        .six-news__img {
+          filter: brightness(70%);
+        }
+
+        .six-news__h4 {
+          @extend %hover;
+        }
+      }
+
+      &:not(:last-child) {
+        border-top: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+      }
+
+      &:last-child {
+        border-bottom: 2px solid #ccc;
+        margin-top: -2px;
+      }
+
+      .six-news__img {
+        border-radius: 4px;
+        transition: all 1s ease;
+      }
+
+      .six-news__h4 {
+        align-self: center;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .six-news__card--g1 {
+      color: var(--color-red-text);
+    }
+
+    .six-news__card--ge {
+      color: var(--color-green-text);
+    }
+
+    .six-news__card--gshow {
+      color: var(--color-orange-text);
+    }
+  }
+}

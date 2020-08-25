@@ -1,0 +1,30 @@
+.globoplay-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  .globoplay-header--left {
+    display: flex;
+    flex-direction: column;
+
+    .globoplay-header__p {
+      color: var(--color-blue);
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .globoplay-header__h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .globoplay-header__button {
+    display: none;
+    background-color: var(--color-blue);
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
+    border-radius: 3px;
+    color: var(--color-grey-light-1);
+  }
+}

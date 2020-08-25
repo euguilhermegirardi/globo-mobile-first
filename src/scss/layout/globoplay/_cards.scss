@@ -1,0 +1,109 @@
+.cards {
+  display: flex;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem; /* Firefox */
+  position: relative;
+  height: 32.8rem;
+
+  .card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 0.8s;
+
+    .card__img {
+      border-radius: 3px;
+    }
+  }
+
+  .card__side--back {
+    transform: rotateY(180deg);
+    cursor: pointer;
+
+    .card__img {
+      opacity: 0.1;
+      border-radius: 3px;
+    }
+  }
+
+  &:hover .card__side--front {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+  }
+
+  &:hover .card__side--back {
+    transform: rotateY(0deg);
+  }
+
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+  }
+
+  .card__info {
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+
+    .card__info--only,
+    .card__info--price {
+      color: var(--color-blue);
+    }
+
+    .card__info--only {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .card__info--price {
+      font-size: 4.5rem;
+    }
+  }
+
+  .card__info--btn,
+  &:link,
+  &:visited {
+    font-size: 1.4rem;
+    color: white;
+    background-color: var(--color-blue);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block; /* set the button as a block in another line.  */
+    border-radius: 10rem;
+    position: relative; /* To set the after behind the button. */
+    transition: all 0.2s; /* Set the after transition. */
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6); /* Increase the element. */
+        opacity: 0; /* Hide the 'transform' after it is executed. */
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+    }
+  }
+}
