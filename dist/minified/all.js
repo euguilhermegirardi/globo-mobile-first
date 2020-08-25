@@ -1,0 +1,1 @@
+var icon=document.querySelector(".navbar-mobile__menu--open"),menu=document.querySelector(".navbar-mobile__menu"),close=document.querySelector(".navbar-mobile__menu--close");icon&&icon.addEventListener("click",e=>{e.preventDefault(),menu.style.width="25rem"}),close&&close.addEventListener("click",e=>{e.preventDefault(),menu.style.width="0"});

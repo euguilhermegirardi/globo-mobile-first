@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   margin: 0 auto;
   height: 5rem;
+  border-bottom: 1px solid #ccc;
 
-  .navbar-mobile__menu {
+  .navbar-mobile__menu--open {
     display: block;
     position: absolute;
     top: 1.2rem;
@@ -27,61 +29,62 @@
     fill: var(--color-blue);
   }
 
-  // .navbar-mobile__menu {
-  //   left: 0;
-  // }
+  .navbar-mobile__menu {
+    left: 0;
+  }
 
-  // .navbar-mobile__subSidebar {
-  //   right: 172px;
-  // }
+  .navbar-mobile__subSidebar {
+    right: 172px;
+  }
 
-  // .navbar-mobile__menu,
-  // .navbar-mobile__sub-sidebar {
-  //   height: 100%;
-  //   width: 0;
-  //   position: fixed;
-  //   z-index: 1;
-  //   top: 0;
-  //   background-color: var(--color-grey-light-1);
-  //   overflow-x: hidden;
-  //   transition: 0.5s;
-  //   padding-top: 60px;
+  .navbar-mobile__menu,
+  .navbar-mobile__sub-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: var(--color-grey-light-1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 
-  //   .navbar-mobile__menu--close {
-  //     position: absolute;
-  //     top: 0;
-  //     right: 25px;
-  //     font-size: 36px;
-  //     margin-left: 50px;
-  //   }
+    .navbar-mobile__menu--close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: var(--color-blue);
+    }
 
-  //   .navbar-mobile__icons-container {
-  //     display: flex;
-  //     justify-content: space-around;
-  //     margin: 1rem;
+    .navbar-mobile__icons-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 1rem;
 
-  //     .navbar-mobile__icon {
-  //       height: 4rem;
-  //       width: 4rem;
-  //       border-radius: 8px;
-  //     }
-  //   }
+      .navbar-mobile__icon {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 8px;
+      }
+    }
 
-  //   .navbar-mobile__links {
-  //     margin-top: 2rem;
+    .navbar-mobile__links {
+      margin-top: 2rem;
 
-  //     .navbar-mobile__link {
-  //       padding: 8px 8px 8px 1rem;
-  //       text-decoration: none;
-  //       font-size: 2rem;
-  //       color: #818181;
-  //       display: block;
-  //       transition: 0.3s;
+      .navbar-mobile__link {
+        padding: 8px 8px 8px 1rem;
+        text-decoration: none;
+        font-size: 2rem;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
 
-  //       &:hover {
-  //         color: #f1f1f1;
-  //       }
-  //     }
-  //   }
-  // }
+        &:hover {
+          color: #f1f1f1;
+        }
+      }
+    }
+  }
 }
