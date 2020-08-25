@@ -1,31 +1,9 @@
 .topglobo-slider {
-  display: none;
+  display: block;
 
   .slider__item {
     max-width: 770px;
     outline: none;
-    padding: 0 2rem;
-    margin-left: 6rem;
-
-    @include respond(iphoneX) {
-      margin-left: 0rem;
-    }
-  }
-
-  @include respond(bp-medium-small) {
-    display: flex;
-  }
-
-  @include respond(bp-small-smallest) {
-    display: flex;
-  }
-
-  @include respond(bp-smallest) {
-    display: flex;
-  }
-
-  @include respond(iphoneX) {
-    display: flex;
   }
 }
 

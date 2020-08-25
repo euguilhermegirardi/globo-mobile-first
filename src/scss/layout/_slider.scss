@@ -1,0 +1,63 @@
+.slider {
+  margin: 5rem auto;
+  outline: none;
+
+  .slider__item {
+    .slider__img {
+      cursor: pointer;
+    }
+  }
+}
+
+// TINY SLIDER CONFIG
+#tns2-ow {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#tns1-ow {
+  height: 100%;
+}
+
+.tns-nav {
+  display: none;
+}
+
+#tns1-mw {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.tns-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+[data-controls="prev"] {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  position: relative;
+  left: -3rem;
+  top: 9rem;
+  z-index: 10000;
+  font-size: 5rem;
+}
+
+[data-controls="next"] {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  position: relative;
+  right: -3rem;
+  top: 9rem;
+  z-index: 10000;
+  font-size: 5rem;
+}
+
+[data-controls="prev"],
+[data-controls="next"] {
+  font-size: 3rem;
+  top: 8.6rem;
+}
