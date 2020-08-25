@@ -3,7 +3,7 @@ function slider() {
     container: ".slider",
      controls: true,
      slideBy: "page",
-     items: 6,
+     items: 2,
      mouseDrag: true,
      swipeAngle: false,
      speed: 400,
